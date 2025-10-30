@@ -34,6 +34,6 @@ public class NilaiKelompok11 {
             i++;
         }
         System.out.println("Kelompok dengan Nilai Tertinggi adalah Kelompok " + kelompoktertinggi + " dengan Nilai " + ratatertinggi);
-        sc.close();
+        sc.close();    
     }
 }
