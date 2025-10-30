@@ -10,5 +10,6 @@ public class star11 {
         for (int i=1; i<=n; i--) {
             System.out.print(" * ");
         }
+        sc.close();
     }
 }
