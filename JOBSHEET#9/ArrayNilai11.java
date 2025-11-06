@@ -21,5 +21,5 @@ public class ArrayNilai11 {
         }
         sc.close();
      }
-    }
+}
 
