@@ -19,5 +19,7 @@ public class GajiKaryawan11 {
         System.out.println("Gaji Yang Diterima Adalah Rp." + totalGaji);
         int totalgajibulat = (int) totalGaji;
         System.out.println("Gaji Bulan Yang Diterima Adalah Rp." + totalgajibulat);
+
+        sc.close();
     }
 }

@@ -17,5 +17,6 @@ public class Tugas1_Jobsheet3 {
         double cicilanperbulan = totpinjaman/z;
         System.out.println("Total Cicilan Perbulan Yang Harus Di Bayar Rp. " + cicilanperbulan);
         
+        sc.close();
     }
 }

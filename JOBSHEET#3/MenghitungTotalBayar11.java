@@ -15,5 +15,7 @@ public class MenghitungTotalBayar11 {
         potongan = diskon*harga;
         jml_bayar = harga - potongan;
         System.out.println("Total Harga Yang Akan Dibayar Bu Lani Adalah : " + jml_bayar);
+
+        sc.close();
     }
 }

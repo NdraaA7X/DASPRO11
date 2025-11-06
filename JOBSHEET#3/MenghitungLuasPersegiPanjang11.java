@@ -18,5 +18,6 @@ public class MenghitungLuasPersegiPanjang11 {
 
         System.out.println("Luas Persegi Adalah " +luas);
 
+        sc.close();
     }
 }

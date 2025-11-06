@@ -26,5 +26,7 @@ public class StudiKasus_2_11 {
 
     sisa_tanah = luas_tanah - luas_kolam_lingkaran - luas_kolam_persegi;
     System.out.println("Sisa Tanah Yang Akan Pak Jaka Tanami Rumput Adalah " + sisa_tanah);
+
+    sc.close();
     }
 }

@@ -13,5 +13,6 @@ public class Tugas2_Jobsheet3 {
 
         System.out.println("Biaya Bensin Yang Diperlukan Dalam Perjalanan Tersebut Sebesar Rp. " + biaya);
 
+        sc.close();
     }
 }

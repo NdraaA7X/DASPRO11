@@ -22,5 +22,7 @@ public class StudiKasus1_Modifikasi {
        gaji_bersih = gaji_pokok_diterima + total_tunjangan;
 
         System.out.println("Gaji Bersih Bu Jesi Adalah " + gaji_bersih);
+
+        sc.close();
     }
 }
