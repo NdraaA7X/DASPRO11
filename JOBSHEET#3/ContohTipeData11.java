@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 public class ContohTipeData11 {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         char golonganDarah = 'A';
         byte jarak = (byte) 130;
         short JumlahPendudukDalamSatuDusun = 1025;
-        float suhu = 60.50;
+        double suhu = 60.50;
         double berat = 0.5467812345;
         long saldo = 150000000;
         int angkaDesimal = 0x10;
@@ -16,5 +19,7 @@ public class ContohTipeData11 {
         System.out.println("Berat\t\t\t\t\t\t\t\t: " + (float) berat);
         System.out.println("Saldo\t\t\t\t\t\t\t\t: " + saldo);
         System.out.println("Angka desimal\t\t\t\t\t\t        : " + angkaDesimal);
+
+        sc.close();
     }
 }
