@@ -5,7 +5,7 @@ public class StudiKasus_2_11 {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-    int lebar_tanah = 50, panjang_tanah = 100, jumlah_kolam = 2, diameter = 2, sisi = 2;
+    int lebar_tanah = 50, panjang_tanah = 100, diameter = 2, sisi = 2;
     double luas_kolam_persegi, phi = 3.14,luas_kolam_lingkaran, luas_tanah, sisa_tanah;
    
     // Tanah Yang Dimiliki Pak Jaka

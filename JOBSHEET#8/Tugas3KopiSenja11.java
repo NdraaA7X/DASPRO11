@@ -4,7 +4,7 @@ public class Tugas3KopiSenja11 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int item, jumlahCabang, jumlahPelanggan;
+        int item;
         int totalSemuaPelanggan = 0, totalSemuaItem = 0;
 
         System.out.print(" Masukan Jumlah Cbang Kafe : ");
