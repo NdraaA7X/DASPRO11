@@ -14,7 +14,7 @@ public class Numbers11 {
         }
 
         for (int i = 0; i < myNumbers.length; i++) {
-            System.out.println("panjang baris ke-" + (i+1) + ": " + myNumbers[i].length);
+            System.out.println("panjang baris ke-" + (i+1) + ": " + myNumbers[i]);
         }
 
         sc.close();
