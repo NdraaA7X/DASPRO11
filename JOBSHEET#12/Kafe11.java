@@ -31,7 +31,7 @@ public class Kafe11 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Menu("Andi", true, "Diskon50%");
+        Menu("Andi", true, "Diskon50");
 
         System.out.print("\nMasukan nomor Menu yang Ingin Anda Pesan: ");
         int pilihanMenu = sc.nextInt();
@@ -51,6 +51,4 @@ public class Kafe11 {
         int hargaTotal = hargaItems[pilihanMenu - 1] * banyakItem;
         return hargaTotal;
     }
-    
-    
 }
