@@ -31,6 +31,10 @@ public class Kafe11 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukan KODE PROMO: ");
+        String kodePromo = sc.nextLine();
+
         Menu("Andi", true, "Diskon50");
 
         System.out.print("\nMasukan nomor Menu yang Ingin Anda Pesan: ");
@@ -38,17 +42,29 @@ public class Kafe11 {
         System.out.print("Masukkan Jumlah Item Yang Inggin Dipesan: ");
         int banyakItem = sc.nextInt();
 
-        int totalHarga = hitungTotalHarga11(pilihanMenu, banyakItem);
+        int totalHarga = hitungTotalHarga11(pilihanMenu, banyakItem, kodePromo);
 
         System.out.println("Total Harga untuk Pesanan Anda Rp." + totalHarga);
 
         sc.close();
     }
 
-    public static int hitungTotalHarga11 (int pilihanMenu, int banyakItem) {
+    public static int hitungTotalHarga11 (int pilihanMenu, int banyakItem, String kodePromo) {
         int [] hargaItems = {15000, 20000, 22000, 12000, 10000, 18000};
 
-        int hargaTotal = hargaItems[pilihanMenu - 1] * banyakItem;
-        return hargaTotal;
-    }
+        int hargaAwal = hargaItems[pilihanMenu - 1] * banyakItem;
+        int totalHarga = hargaAwal;
+
+        
+        if (kodePromo.equalsIgnoreCase("DISKON50")) {
+            int diskon = hargaAwal * 50 / 100;
+            totalHarga = hargaAwal - diskon;
+        } 
+        else if (kodePromo.equalsIgnoreCase("DISKON30")) {
+            int diskon = hargaAwal * 30 / 100;
+            totalHarga = hargaAwal - diskon;
+        }
+
+        return totalHarga;
+      }
 }
