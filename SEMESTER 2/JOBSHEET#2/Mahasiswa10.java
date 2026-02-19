@@ -40,4 +40,11 @@ public class Mahasiswa10 {
             return "Kinerja Kurang";
         }   
     }
+
+    Mahasiswa10 mhsFarhan = new Mahasiswa10(
+        "Muhammad Ali Farhan", 
+        "2241720171", 
+        "SI 2J", 
+        3.55
+    );
 }
