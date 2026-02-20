@@ -9,6 +9,15 @@ public class Dosen10 {
     public Dosen10() {
     }
 
+    public Dosen10(String id, String namaDosen, boolean aktif,
+                   int tahun, String keahlian) {
+        idDosen = id;
+        nama = namaDosen;
+        statusAktif = aktif;
+        tahunBergabung = tahun;
+        bidangKeahlian = keahlian;
+    }
+
     void tampilInformasi() {
         System.out.println("===== PROFIL DOSEN =====");
         System.out.println("ID Dosen     : " + idDosen);
