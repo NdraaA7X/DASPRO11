@@ -4,6 +4,7 @@ public class MataKuliahMain10 {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         MataKuliah10 matkul10 = new MataKuliah10();
         System.out.print("Masukan Kode MK : ");
         matkul10.KodeMK = sc.nextLine();
@@ -30,6 +31,23 @@ public class MataKuliahMain10 {
         System.out.println();
 
         matkul10.tampilInformasi();
+
+        System.out.println("\n DATA MATA KULIAH KEDUA");
+        sc.nextLine();
+
+        System.out.print("Masukan Kode MK : ");
+        String kodeMK = sc.nextLine();
+        System.out.print("Masukan Nama Matkul : ");
+        String namaMK = sc.nextLine();
+        System.out.print("Masukan SKS : ");
+        int sks = sc.nextInt();
+        System.out.print("Masukan Jumlah Jam : ");
+        int jumlahJam = sc.nextInt();
+
+        MataKuliah10 matkul11 = new MataKuliah10(kodeMK, namaMK, sks, jumlahJam);
+        System.out.println();
+
+        matkul11.tampilInformasi();
 
         sc.close();
     }
