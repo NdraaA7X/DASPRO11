@@ -14,5 +14,20 @@ public class DosenMain10 {
         dosen10.ubahKeahlian("Jaringan");
         System.out.println("Setelah ubah keahlian");
         dosen10.tampilInformasi();
+
+        Dosen10 dosen11 = new Dosen10(
+            "D002",
+            "Jokowi",
+            true,
+            "Basis Data"
+        );
+        
+        System.out.println("\nData dosen kedua:");
+        dosen2.tampilInformasi();
+        System.out.println("Masa Kerja: " + dosen2.hitungMasaKerja(2026) + " tahun");
+
+        dosen2.setStatusAktif(false);
+        dosen2.ubahKeahlian("Pemrograman");
+        dosen2.tampilInformasi();
     }
 }
