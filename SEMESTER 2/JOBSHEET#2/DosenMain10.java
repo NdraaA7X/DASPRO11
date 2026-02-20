@@ -15,10 +15,11 @@ public class DosenMain10 {
         System.out.println("Setelah ubah keahlian");
         dosen10.tampilInformasi();
 
-        Dosen10 dosen11 = new Dosen10(
+        Dosen10 dosen2 = new Dosen10(
             "D002",
             "Jokowi",
-            true,
+            false,
+            2020,
             "Basis Data"
         );
         
