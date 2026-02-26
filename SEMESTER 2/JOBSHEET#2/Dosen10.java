@@ -10,7 +10,7 @@ public class Dosen10 {
     }
 
     public Dosen10(String id, String namaDosen, boolean aktif,
-                   int tahun, String keahlian) {
+                    int tahun, String keahlian) {
         idDosen = id;
         nama = namaDosen;
         statusAktif = aktif;
