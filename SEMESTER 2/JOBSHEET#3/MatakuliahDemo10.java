@@ -30,6 +30,6 @@ public class MatakuliahDemo10 {
             System.out.println("Jumlah Jam: " + arrayOfMatakuliah10[i].Jumlahjam);
             System.out.println("-----------------------------");
         }
-
+        sc.close();
     }
 }
