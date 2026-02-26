@@ -7,7 +7,7 @@ public class DosenDemo10 {
         System.out.print("Masukkan Jumlah Dosen: ");
         int jumlah = Integer.parseInt(sc.nextLine());
 
-        Dosen10[] arrayOfDosen = new Dosen10[jumlah];
+        Dosenn10[] arrayOfDosen = new Dosenn10[jumlah];
         String kode, nama, dummy;
         Boolean jenisKelamin;
         int usia;
@@ -26,16 +26,16 @@ public class DosenDemo10 {
             usia = Integer.parseInt(dummy);
             System.out.println("------------------------------");
 
-            arrayOfDosen[i] = new Dosen10(kode, nama, jenisKelamin, usia);
+            arrayOfDosen[i] = new Dosenn10(kode, nama, jenisKelamin, usia);
         }
 
-        int no = 1;
-        for (Dosen10 dosen : arrayOfDosen) {
-            System.out.println("Data Dosen ke-" + no);
-            dosen.cetakInfo();
-            no++;
-        }
+        DataDosen10 dataDosen = new DataDosen10();
+        dataDosen.dataSemuaDosen(arrayOfDosen);
+        dataDosen.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        dataDosen.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+        dataDosen.infoDosenPalingTua(arrayOfDosen);
+        dataDosen.infoDosenPalingMuda(arrayOfDosen);
+
         sc.close();
     }
 }
-
